@@ -1,14 +1,21 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar class="col-xs-12"color="primary">
     <ion-title>
-      Ionic Blank
+      The Hotel
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
+<ion-content>
+
+  <ion-card>
+    <img class="header" src="https://www.bellagio.com/content/dam/MGM/bellagio/hotel/penthouse-suite/architecture/bellagio-hotel-penthouse-suite-living-room.tif"/>
+  </ion-card>
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    Welcome to <strong>The Hotel</strong>, we hope you enjoy your stay.
   </p>
+
+  <button (click)="openSearch()" ion-button full color="light">Find a Room</button>
+
 </ion-content>

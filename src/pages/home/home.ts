@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SearchPage } from '../search/search';
 
 @Component({
-  selector: 'page-home',
+  selector: 'home-page',
   templateUrl: 'home.html'
 })
+  
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public nav: NavController) {
 
+  }
+
+  openSearch(){
+    this.nav.push(SearchPage);
   }
 
 }
